@@ -108,16 +108,31 @@ python -m src.train --data_dir data/train --mode neural_net
 python -m src.train --data_dir data/train --mode cnn
 ```
 
-## 📊 Results
+## 📊 Empirical Results & Comparison
 
-| Classifier | Validation Accuracy |
-|------------|:-------------------:|
-| Naive Bayes | ~55% |
-| Decision Tree | ~85% |
-| Linear SVM | ~71% |
-| Softmax | ~82% |
-| 2-Layer Neural Net | ~92% |
-| **ResNet50 (Transfer Learning)** | **~95%+** |
+| Classifier | Input Format | Stanford CS229 Baseline | Our Validation Accuracy |
+| :--- | :---: | :---: | :---: |
+| **Gaussian Naive Bayes** | 64×64 Flat (12,288) | 54.99% | **59.81%** |
+| **Decision Tree** | 64×64 Flat (12,288) | 84.73% | **90.78%** |
+| **Random Forest (100 Trees)** | 64×64 Flat (12,288) | *N/A* | **99.26%** |
+| **Linear SVM (SGD)** | 64×64 Flat (12,288) | 71.39% | **97.88%** |
+| **Softmax (Logistic Regression)**| 64×64 Flat (12,288) | 82.31% | **97.57%** |
+| **2-Layer Neural Network** | 64×64 Flat (12,288) | 92.24% | **99.06%** |
+| **ResNet-50 (Transfer + Fine-Tuning)** | 224×224×3 Tensors | *N/A* | **98.63%** |
+
+### 📈 Visualizations & Diagnostics
+
+#### 1. Model Comparison
+![Model Comparison](results/model_comparison.png)
+
+#### 2. ResNet-50 Training & Fine-Tuning Progression
+![Training History](results/training_history.png)
+
+#### 3. Confusion Matrix (ResNet-50)
+![Confusion Matrix](results/confusion_matrix.png)
+
+#### 4. Per-Class Accuracy
+![Per-Class Accuracy](results/per_class_accuracy.png)
 
 ## 📚 References
 

@@ -36,9 +36,8 @@ Thumbs.db
 *.h5
 checkpoints/
 
-# Results (keep the directory, ignore large files)
-results/*.png
-results/*.json
+# Results
+# (tracked in git)
 
 # Docs
 docs/*.pptx

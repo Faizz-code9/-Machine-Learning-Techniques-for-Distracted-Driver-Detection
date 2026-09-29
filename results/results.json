@@ -1,0 +1,9 @@
+{
+    "Gaussian Naive Bayes": 59.81,
+    "Decision Tree": 90.78,
+    "Random Forest (100 Trees)": 99.26,
+    "Linear SVM (SGD)": 97.88,
+    "Softmax (Logistic Reg.)": 97.57,
+    "2-Layer Neural Net (He Init)": 99.06,
+    "ResNet-50 (Fine-Tuned)": 98.63
+}
