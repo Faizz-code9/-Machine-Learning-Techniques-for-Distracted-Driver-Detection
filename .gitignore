@@ -36,11 +36,15 @@ Thumbs.db
 *.h5
 checkpoints/
 
-# Results
-# (tracked in git)
+# Results photos
+results/*.png
+results/*.jpg
+results/*.jpeg
 
-# Docs
+# Docs & Writeups
 docs/*.pptx
+docs/writeup*
+docs/Writeup*
 
 # Scratch & temporary scripts
 scratch/

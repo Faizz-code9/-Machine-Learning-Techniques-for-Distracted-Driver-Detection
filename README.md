@@ -120,19 +120,6 @@ python -m src.train --data_dir data/train --mode cnn
 | **2-Layer Neural Network** | 64×64 Flat (12,288) | 92.24% | **99.06%** |
 | **ResNet-50 (Transfer + Fine-Tuning)** | 224×224×3 Tensors | *N/A* | **98.63%** |
 
-### 📈 Visualizations & Diagnostics
-
-#### 1. Model Comparison
-![Model Comparison](results/model_comparison.png)
-
-#### 2. ResNet-50 Training & Fine-Tuning Progression
-![Training History](results/training_history.png)
-
-#### 3. Confusion Matrix (ResNet-50)
-![Confusion Matrix](results/confusion_matrix.png)
-
-#### 4. Per-Class Accuracy
-![Per-Class Accuracy](results/per_class_accuracy.png)
 
 ## 📚 References
 
