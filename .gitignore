@@ -42,3 +42,6 @@ results/*.json
 
 # Docs
 docs/*.pptx
+
+# Scratch & temporary scripts
+scratch/
