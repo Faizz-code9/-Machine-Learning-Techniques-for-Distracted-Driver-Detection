@@ -58,7 +58,7 @@ def train_cnn(model, train_loader, val_loader, epochs=15, lr=1e-4, device='cuda'
     
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=lr)
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', factor=0.1, patience=3, verbose=True)
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', factor=0.1, patience=3)
     
     history = {'train_loss': [], 'train_acc': [], 'val_loss': [], 'val_acc': []}
     
