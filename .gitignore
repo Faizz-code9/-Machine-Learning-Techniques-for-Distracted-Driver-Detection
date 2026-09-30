@@ -44,4 +44,3 @@ checkpoints/
 scratch/
 # boiler plate
 notebooks/distracted_driver_detection.ipynb
-notebooks/ml-project.ipynb
