@@ -37,14 +37,8 @@ Thumbs.db
 checkpoints/
 
 # Results photos
-results/*.png
-results/*.jpg
-results/*.jpeg
 
 # Docs & Writeups
-docs/*.pptx
-docs/writeup*
-docs/Writeup*
 
 # Scratch & temporary scripts
 scratch/
