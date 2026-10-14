@@ -46,3 +46,4 @@ scratch/
 # boiler plate
 notebooks/distracted_driver_detection.ipynb
 notebook_cells.txt
+docs/press.md

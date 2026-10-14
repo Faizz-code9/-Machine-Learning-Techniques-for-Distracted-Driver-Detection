@@ -89,7 +89,7 @@ def display_demo_result(raw_img, probs, top_class_idx, top_class_name, confidenc
     
     is_safe = (top_class_idx == 0)
     banner_color = '#2E7D32' if is_safe else '#C62828'
-    status_text = "🟢 SAFE DRIVING" if is_safe else f"🔴 DISTRACTION: {top_class_name.upper()}"
+    status_text = "SAFE DRIVING" if is_safe else f"DISTRACTION: {top_class_name.upper()}"
     
     ax1.set_title(f"{status_text}\nConfidence: {confidence:.1f}%", 
                   fontsize=13, fontweight='bold', color=banner_color, pad=12)
@@ -101,7 +101,7 @@ def display_demo_result(raw_img, probs, top_class_idx, top_class_name, confidenc
     ax2.set_xlim(0, 105)
     ax2.set_xlabel('Probability (%)', fontweight='bold', fontsize=11)
     ax2.set_title('Predicted Probability Distribution Across 10 Classes', fontweight='bold', fontsize=12, pad=12)
-    ax2.gca().invert_yaxis()
+    ax2.invert_yaxis()
     
     for bar in bars:
         w = bar.get_width()
