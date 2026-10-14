@@ -39,8 +39,10 @@ checkpoints/
 # Results photos
 
 # Docs & Writeups
-
+docs/writeup.md
+docs/research_papers_references.pdf
 # Scratch & temporary scripts
 scratch/
 # boiler plate
 notebooks/distracted_driver_detection.ipynb
+notebook_cells.txt
